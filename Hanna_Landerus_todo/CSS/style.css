@@ -50,7 +50,6 @@ hr {
 
 #list {
     height: 30px;
-    /*border: solid purple;*/
     padding-left: 10px;
     padding-right: 10px;
     text-align: left;
@@ -71,7 +70,6 @@ hr {
 @media screen and (min-width: 1024px) {
 
     #list {
-        border: solid;
         padding-left: 250px;
         padding-right: 250px;
 
@@ -81,7 +79,6 @@ hr {
 @media screen and (min-width: 1200px) {
 
     #list {
-        border: solid red;
         padding-left: 290px;
         padding-right: 290px;
     }
@@ -90,7 +87,6 @@ hr {
 @media screen and (min-width: 1300px) {
 
     #list {
-        border: solid yellow;
         padding-left: 320px;
         padding-right: 320px;
     }
