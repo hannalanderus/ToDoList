@@ -1,10 +1,10 @@
-/***Globala, hämtat från html dokument***/
+/***To do list! Add task to a list. You can delete and mark them as done. If done they will move to a list over done tasks.***/
 const newtodobutton = document.getElementById('newtodobutton');
 const activeToDoList = document.getElementById('activeToDoList');
 const todolistinput = document.getElementById('todolistinput');
 const deleteAll = document.getElementById('deleteAll');
 
-/***funktion för att lägga till uppgifter att göra i inputfält***/
+/***function for adding task to the to do list, creating list items and buttons***/
 newtodobutton.addEventListener('click', function () {
     const li = document.createElement('li');
     const doneButton = document.createElement('button');
@@ -21,28 +21,28 @@ newtodobutton.addEventListener('click', function () {
 
 
 
-    /***funktion för att inte kunna lägga till tom upgift***/
+    /***function that makes it impossible to add a empty task***/
     if (todolistinput.value && todolistinput) {
-        //gör inget
+        //do nothing
     } else {
-        //ta bort li så du ej kan lägga till tom li
+        //remove the li element so no buttons and empty li creates
         li.remove();
     };
-    
-    /***funktion för radera uppgift från todo lista***/
+
+    /*** function for deleting task from to do list and done list***/
     deleteButton.addEventListener('click', function () {
         this.parentElement.parentElement.removeChild(this.parentElement);
 
     });
 
-    /***funktion som deletar alla saker på todolistan***/
+    /***function to remove ALL tasks on both lists***/
     deleteAll.addEventListener("click", deleteAllTodos);
 
     function deleteAllTodos() {
         li.remove();
     }
 
-    /***funktion för att flytta uppgift till Done lista***/
+    /***function that moves the task from to do list to done list, when clicking done button***/
     doneButton.addEventListener('click', function () {
         const doneList = document.getElementById('doneList');
         const listItems = document.querySelectorAll('li');
@@ -52,7 +52,7 @@ newtodobutton.addEventListener('click', function () {
         doneButton.remove(this.doneButton);
     });
 
-    /***rensa inputfält från tidigare todo***/
+    /***remove text from input field after adding task to the list***/
     todolistinput.value = '';
-    
-}); /*newtodobutton funktion - end!*/
+
+}); /*newtodobutton function - end!*/

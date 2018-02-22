@@ -11,7 +11,7 @@
 
 <body>
     <div class="mainwrapper">
-
+        <!--Start: to do list, stuff to do -->
         <div class="informationwrapper">
             <h1>ToDoList</h1>
             <input id="todolistinput" type="text" autofocus>
@@ -20,29 +20,26 @@
             <h2>Need ToDo!</h2>
             <ul id="activeToDoList"></ul>
         </div>
-
-
+        <!-- Start: to do list, stuff that´s done-->
         <div class="donewrapper">
             <h3>DONE</h3>
             <hr>
-            <ul id="doneList">
-
-
-            </ul>
+            <ul id="doneList"></ul>
         </div>
         <button id="deleteAll">Delete All</button>
-
     </div>
 
+    <!--Date-->
     <p id="date"></p>
     <script>
         var d = new Date();
         document.getElementById("date").innerHTML = d.toDateString();
-
     </script>
+    
+    <!-- end image-->
+    <img src="Image/man.jpg" alt="person">
 
     <script src=main.js></script>
-
 </body>
 
 </html>
