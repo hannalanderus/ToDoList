@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>ToDoList</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+
+<body>
+    <div class="mainwrapper">
+
+        <div class="informationwrapper">
+            <h1>ToDoList</h1>
+            <input id="todolistinput" type="text" autofocus>
+            <button id="newtodobutton">New ToDo</button>
+
+            <h2>Need ToDo!</h2>
+            <ul id="activeToDoList"></ul>
+        </div>
+
+
+        <div class="donewrapper">
+            <h3>DONE</h3>
+            <hr>
+            <ul id="doneList">
+
+
+            </ul>
+        </div>
+        <button id="deleteAll">Delete All</button>
+
+    </div>
+
+    <p id="date"></p>
+    <script>
+        var d = new Date();
+        document.getElementById("date").innerHTML = d.toDateString();
+
+    </script>
+
+    <script src=main.js></script>
+
+</body>
+
+</html>

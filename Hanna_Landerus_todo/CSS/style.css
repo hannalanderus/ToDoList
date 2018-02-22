@@ -1,0 +1,97 @@
+body,
+#deleteAll,
+#newtodobutton,
+.innertext {
+    font-family: "Courier New", Courier, monospace;
+}
+
+#deleteAll {
+    border-radius: 10%;
+}
+
+#newtodobutton {
+    border-radius: 10%;
+    font-size: 1em;
+}
+
+h1,
+h2 {
+    text-decoration-line: underline;
+}
+
+hr {
+    width: 80%;
+    margin-top: -15px;
+}
+
+#buttonDelete {
+    margin-left: 60px;
+    float: right;
+    color: whitesmoke;
+    background-color: black;
+    font-size: 0.8em;
+
+}
+
+#buttonDone {
+    margin-left: 20px;
+    float: right;
+    color: whitesmoke;
+    background-color: darkslategrey;
+    font-size: 0.8em;
+}
+
+#deleteAll {
+    height: 40px;
+    color: whitesmoke;
+    background-color: black;
+}
+
+
+#list {
+    height: 30px;
+    /*border: solid purple;*/
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+    list-style-type: none;
+
+}
+
+.mainwrapper {
+    text-align: center;
+}
+
+#date {
+    text-align: center;
+    font-size: 2em;
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    #list {
+        border: solid;
+        padding-left: 250px;
+        padding-right: 250px;
+
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    #list {
+        border: solid red;
+        padding-left: 290px;
+        padding-right: 290px;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+
+    #list {
+        border: solid yellow;
+        padding-left: 320px;
+        padding-right: 320px;
+    }
+}
